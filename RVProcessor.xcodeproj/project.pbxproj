@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		199BD537285BD28F0028D0DE /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 199BD536285BD28F0028D0DE /* main.c */; };
+		199BD543285BD3270028D0DE /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 199BD541285BD3270028D0DE /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,10 @@
 
 /* Begin PBXFileReference section */
 		199BD533285BD28F0028D0DE /* RVProcessor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RVProcessor; sourceTree = BUILT_PRODUCTS_DIR; };
-		199BD536285BD28F0028D0DE /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		199BD53F285BD3270028D0DE /* program.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = program.txt; sourceTree = "<group>"; };
+		199BD540285BD3270028D0DE /* instructions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = instructions.h; sourceTree = "<group>"; };
+		199BD541285BD3270028D0DE /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		199BD542285BD3270028D0DE /* compiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compiler.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +60,10 @@
 		199BD535285BD28F0028D0DE /* RVProcessor */ = {
 			isa = PBXGroup;
 			children = (
-				199BD536285BD28F0028D0DE /* main.c */,
+				199BD542285BD3270028D0DE /* compiler.h */,
+				199BD540285BD3270028D0DE /* instructions.h */,
+				199BD541285BD3270028D0DE /* main.c */,
+				199BD53F285BD3270028D0DE /* program.txt */,
 			);
 			path = RVProcessor;
 			sourceTree = "<group>";
@@ -118,7 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				199BD537285BD28F0028D0DE /* main.c in Sources */,
+				199BD543285BD3270028D0DE /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
