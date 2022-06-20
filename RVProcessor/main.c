@@ -798,7 +798,7 @@ int main(int argc, const char * argv[]) {
     printf("--------------SRL INSTRUCTION-----------------------------------\nTEST 1:\n\nrd: 1, rs1: 2, rs2: 3\nrs1 value: 0x00000ABC, rs2 value:0x00000010\nSRL(rd, rs1, rs2):\n");
     registers[2].value = 0xABC00000;
     registers[3].value = 0x00000010;
-    sra(1, 2, 3);
+    srl(1, 2, 3);
     printf("Expected value in rd: %X \nActual value: %X\n", 0xFFFFABC0, registers[1].value);
     if (registers[1].value == 0xFFFFABC0) {
         printf("PASSED\n");
@@ -817,7 +817,7 @@ int main(int argc, const char * argv[]) {
     printf("--------------SRLI INSTRUCTION-----------------------------------\nTEST 1:\n\nrd: 1, rs1: 2\nrs1 value: 0x00000ABC, immediate value:0x00000010\nSRLI(rd, rs1, immediate value):\n");
     shamt_i = 0x00000010;
     registers[2].value = 0xABC00000;
-    srai(1, 2, shamt_i);
+    srli(1, 2, shamt_i);
     printf("Expected value in rd: %X \nActual value: %X\n", 0xFFFFABC0, registers[1].value);
     if (registers[1].value == 0xFFFFABC0) {
         printf("PASSED\n");
